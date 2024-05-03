@@ -1,3 +1,168 @@
 .hide-input-range .rdrInputRanges {
   display: none;
 }
+
+/* .isActiveDate {
+  color: rgb(61, 145, 255);
+  background-color: #eff2f7;
+} */
+
+.isActiveDate {
+  border: none;
+  /* Border style for the active date range */
+  border-radius: 5px;
+  /* Optional: Rounded border edges */
+}
+
+/* Define CSS for the inactive date ranges */
+.DateRangePicker .DateRangePickerInput__calendar--horizontal .DateRangePickerInput__calendar__month {
+  display: none;
+  /* Hide month calendar initially */
+}
+
+/* Show month calendar on hover */
+.DateRangePicker .DateRangePickerInput__calendar--horizontal:hover .DateRangePickerInput__calendar__month {
+  display: block;
+}
+
+.rdrDefinedRangesWrapper {
+  width: 117px !important;
+  border-right: none !important;
+
+}
+
+.rdrStaticRange:hover .rdrStaticRangeLabel,
+.rdrStaticRange:focus .rdrStaticRangeLabel {
+  background: transparent !important
+}
+
+.rdrStaticRange {
+  border-bottom: none !important;
+  border-radius: 6px;
+}
+
+.rdrStaticRange.rdrStaticRangeSelected {
+  color: #344054 !important;
+  background: #E5F3FE;
+}
+
+.rdrStaticRangeLabel {
+  padding: 10px 10px !important;
+}
+
+.rdrSelected,
+.rdrInRange,
+.rdrStartEdge,
+.rdrEndEdge {
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+.rdrDay {
+  line-height: 40px !important;
+  height: 40px !important;
+  border-bottom: 1px solid #fff !important;
+  border-top: 1px solid #fff !important;
+}
+
+.rdrEndEdge {
+  right: 0 !important;
+  height: 40px !important;
+}
+
+.rdrDateDisplayWrapper {
+  background-color: transparent !important;
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+  width: 5px !important;
+  height: 5px !important;
+
+}
+
+.rdrDayNumber {
+  top: 0 !important;
+  bottom: 0 !important;
+}
+
+.rdrStartEdge,
+.rdrEndEdge {
+  background: #84BFF3 !important;
+
+}
+
+.rdrSelected,
+.rdrInRange,
+.rdrStartEdge,
+.rdrEndEdge {
+  background: #84BFF3 !important;
+}
+
+
+.rdrDayStartPreview,
+.rdrDayInPreview,
+.rdrDayEndPreview {
+  background: transparent !important;
+  top: 0 !important;
+  left: 0px;
+  right: 0px;
+  bottom: 0 !important;
+  pointer-events: none;
+  border: 1px solid #84BFF3 !important;
+  z-index: 1;
+}
+
+.rdrDayDisabled .rdrInRange,
+.rdrDayDisabled .rdrStartEdge,
+.rdrDayDisabled .rdrEndEdge,
+.rdrDayDisabled .rdrSelected,
+.rdrDayDisabled .rdrDayStartPreview,
+.rdrDayDisabled .rdrDayInPreview,
+.rdrDayDisabled .rdrDayEndPreview {
+  filter: none !important;
+}
+
+.calander_wrapper .rdrCalendarWrapper.rdrDateRangeWrapper div:nth-child(1) {
+  order: 1;
+}
+
+.calander_wrapper .rdrCalendarWrapper.rdrDateRangeWrapper div:nth-child(2) {
+  order: 0;
+}
+
+.calander_wrapper .rdrCalendarWrapper.rdrDateRangeWrapper div:nth-child(3) {
+  order: 2;
+}
+
+.calander_wrapper .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDayDisabled {
+  color: #1d2429 !important;
+  background-color: transparent !important;
+
+}
+
+.calander_wrapper .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDayDisabled .rdrDayNumber span {
+  color: #1d2429 !important;
+}
+
+/* .calander_wrapper .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDayDisabled .rdrEndEdge + .rdrDayNumber >  span{
+  color: rgba(255, 255, 255, 0.85)!important;
+}
+
+.calander_wrapper .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDayDisabled .rdrStartEdge + .rdrDayNumber >  span{
+  color: rgba(255, 255, 255, 0.85)!important;
+} */
+
+.calander_wrapper .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDayPassive .rdrDayNumber span {
+  color: #d5dce0 !important;
+}
+
+
+.hoverClass {
+  background-color: #F0F0F0;
+  /* Change background color on hover */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  /* Add any other hover effects here */
+}
